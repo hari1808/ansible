@@ -1,6 +1,6 @@
 ---
 - name: create users to all hosts
-  hosts: app
+  hosts: all
   become: yes
   roles:
    - common 

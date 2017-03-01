@@ -1,9 +1,7 @@
 --- 
-users: 
-  - name: anu 
-    key: "{{lookup('file', 'roles/common/files/anu.pub') }}"
-  
-admin:  
+admin:
+  - name: anu
+    key: "{{lookup('file', 'roles/common/files/anu.pub') }}"  
   - name: vinod
     key: "{{lookup('file', 'roles/common/files/vinod.pub') }}"
   - name: hari
