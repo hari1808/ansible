@@ -3,7 +3,7 @@
   file: path=/opt/app state=directory mode=0755
   
 - name: copy the docker-composefile
-  templates: src=docker-compose.yml.j2 dest=/opt/app/docker-compose.yml
+  template: src=docker-compose.yml.j2 dest=/opt/app/docker-compose.yml
   
 - name: start docker-compose
   shell: docker-compose up -d
